@@ -1,8 +1,8 @@
 @main
 public struct yes_no {
-    public private(set) var text = "Hello, World!"
-
     public static func main() {
-        print(yes_no().text)
+        let randomNumber = Int.random(in: 0...1)
+        let answer = randomNumber == 0 ? "Yes" : "No"
+        print(answer)
     }
 }
